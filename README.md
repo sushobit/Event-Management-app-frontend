@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# TASK - 2 Event Management Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Event Management Application! This web app allows users to create, update, and manage events efficiently. It also provides weather information for event locations to help users make informed decisions.
 
-## Available Scripts
+## Features
+- **Create Event:** Users can create new events by providing a title, description, date, and location.
+- **Update Event:** Existing events can be updated with new details, including title, description, date, and location.
+- **Event List:** View a list of all events with their details.
+- **Fetch Weather Data:** Automatically fetch and display current weather information for the event location.
+- **Weather Details:** Shows temperature, weather description, and humidity for the specified location.
+- **Interactive Date Selection:** Use a calendar popup to select event dates easily and accurately.
+- **Material-UI:** Utilizes Material-UI components for a modern and responsive user interface.
+- **Framer Motion Animations:** Adds smooth animations for form transitions and interactions.
+- **Mobile Friendly:** The application is fully responsive, providing a great user experience on both desktop and mobile devices.
 
-In the project directory, you can run:
+## Technologies Used
+- **Frontend:**
+  - React.js
+  - Material-UI
+  - Framer Motion
+  - Axios for API requests
+- **Backend:**
+  - Node.js
+  - Express.js
+- **Database:**
+  - SQLite
 
-### `npm start`
+## Deployment Link:- [event-management-app-fullstack-link](https://event-management-app-fullstack-sushobhit.onrender.com)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Video 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Use headphones
 
-### `npm test`
+https://github.com/user-attachments/assets/9b32b5a1-98f1-4d5d-a17a-c97f98dcd8fd
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

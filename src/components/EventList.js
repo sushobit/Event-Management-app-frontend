@@ -37,17 +37,7 @@ const EventList = ({ user, onLogout }) => {
     setSelectedEvent(null);
     fetchEvents();
   };
-  useEffect(() => {
-    const handleMouseMove = (event) => {
-      setCursorPosition({ x: event.clientX, y: event.clientY });
-    };
-    
-    window.addEventListener('mousemove', handleMouseMove);
-    
-    return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
-    };
-  }, []);
+  
 
   return (
     <div className="event-list-container">  {/* Add CSS class here */}
@@ -96,20 +86,7 @@ const EventList = ({ user, onLogout }) => {
             </Grid>
           ))}
         </Grid>
-        <div
-        style={{
-          position: 'absolute',
-          width: '50px',
-          height: '50px',
-          backgroundColor: 'rgba(0, 0, 0, 0.2)',
-          borderRadius: '50%',
-          transform: 'translate(-50%, -50%)',
-          pointerEvents: 'none',
-          left: cursorPosition.x,
-          top: cursorPosition.y,
-          transition: 'left 0.1s ease-out, top 0.1s ease-out',
-        }}
-      />
+        
       </Container>
     </div>
   );

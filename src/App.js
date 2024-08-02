@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import EventList from './components/EventList';
+import Login from './components/Login';
 
 function App() {
+  const [user, setUser] = useState(() => sessionStorage.getItem('user') || '');
+
+  
+  useEffect(() => {
+    if (user) {
+      sessionStorage.setItem('user', user);
+    } else {
+      sessionStorage.removeItem('user');
+    }
+  }, [user]);
+
+  const handleLogout = () => {
+    setUser('');
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route
+          path="/login"
+          element={user ? <Navigate to="/" /> : <Login setUser={setUser} />}
+        />
+        <Route
+          path="/"
+          element={user ? <EventList user={user} onLogout={handleLogout} /> : <Navigate to="/login" />}
+        />
+      </Routes>
+    </Router>
   );
 }
 
